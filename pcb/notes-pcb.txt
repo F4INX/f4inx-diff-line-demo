@@ -1,0 +1,19 @@
+JLCPCB, 2 layers, FR4, 0.8 mm, 1 oz (35 µm) copper.
+Material info: https://jlcpcb.com/help/article/UL-Certification, https://drive.google.com/file/d/12ExhD1_hhs4CnjImo46i_ZlCUNnHff2M/view
+Typical value: 4.6 mm.
+
+Calculations with TXLine: 1.44 mm wide single-ended, 1.14 mm for loosely coupled diff pairs (gap 1 mm).
+Should be OK, but width is not convenient.
+
+HDMI connector: https://jlcpcb.com/partdetail/149706-HDMI_00119PCBTP/C138388
+  0.3 mm pins, difficult to match traces.
+
+Switch to 4 layers.
+
+JLCPCB, 4 layers, default stackup, 7628, 0.21040 mm, 1 oz (35 µm) copper.
+https://jlcpcb.com/impedance
+4.4 dielectric constant, frequency not specified, neither loss tangent.
+
+Calculations with TXLine: ok, use 0.36 mm for both single-ended and diff pairs with 2 mm gap (loose coupling).
+
+Dimensions ok for connector.
