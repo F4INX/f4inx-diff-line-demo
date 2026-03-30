@@ -17,3 +17,6 @@ https://jlcpcb.com/impedance
 Calculations with TXLine: ok, use 0.36 mm for both single-ended and diff pairs with 2 mm gap (loose coupling).
 
 Dimensions ok for connector.
+
+https://jlcpcb.com/parts/2nd/Connectors/HDMI_Connectors_3260
+https://jlcpcb.com/partdetail/149706-HDMI_00119PCBTP/C138388
