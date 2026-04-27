@@ -1,0 +1,14 @@
+# Python cache files
+__pycache__/
+*.pyc
+
+# Emerge simulation data and cache files
+*.EMResults/
+*pylines.txt
+*simdata.emerge
+
+# Other common ignore patterns
+*.log
+*.tmp
+*.swp
+.DS_Store
