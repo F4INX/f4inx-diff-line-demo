@@ -170,14 +170,11 @@ sdd21 = (s31 - s32 - s41 + s42)/2
 fig, ax1 = plt.subplots(figsize=(12, 7))
 freq_GHz = g.freq / 1e9
 
-fig, ax1 = plt.subplots(figsize=(12, 7))
-freq_GHz = g.freq / 1e9
-
 # Sdd11 (return loss) on left y-axis (dB)
 ax1.plot(freq_GHz, 20*np.log10(np.abs(sdd11)), 'b-', linewidth=2, label='Sdd11 (return loss)')
 ax1.set_xlabel('Frequency (GHz)')
 ax1.set_ylabel('Return Loss (dB)', color='b')
-ax1.set_title('Differential pair with slot')
+ax1.set_title("Reference for cross w. butterfly simulations")
 ax1.grid(True)
 ax1.tick_params(axis='y', labelcolor='b')
 

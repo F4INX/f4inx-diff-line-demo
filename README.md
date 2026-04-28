@@ -1,4 +1,4 @@
-# Household differential pairs experiments
+# Differential pairs experiments
 
 ## Introduction and context
 
@@ -31,7 +31,7 @@ After some discussions telling that differential pairs are not totally immune to
 
 * For a thin slot, the dominant effect is not the short section with increased impedance, precisely because it is short, but the current redistribution effect explained later.
 
-## Lab session 1
+## Household experiments
 
 ### Materials
 
@@ -114,3 +114,47 @@ Total time spent between first and last pictures: 48 minutes.
 The screen used for the tests had a 1920×1080 resolution with a refresh frequency of 60 Hz. Assuming most common parameters for control data and sound channels, according to [https://en.wikipedia.org/wiki/HDMI#Resolution_and_refresh_frequency_limits](https://en.wikipedia.org/wiki/HDMI#Resolution_and_refresh_frequency_limits), a total bitrate of 3.20 Gbit/s is needed, that is 1.07 Gbit/s on each of the 3 data differential pairs, equivalent to a Nyquist frequency of 533 MHz.
 
 Definitely not a very high speed differential pair. For instance, PCI Express uses 2.5 Gbit/s differential pairs since 2003 [https://en.wikipedia.org/wiki/PCI_Express#Comparison_table](https://en.wikipedia.org/wiki/PCI_Express#Comparison_table). Still an interesting experiment, particularly for electronics students.
+
+## Study of a board
+
+### Electromagnetic simulations
+
+Before making an actual board, electromagnetic simulations were performed to determines which configuration would give the best results for a demo.
+
+Given the frequency of the link, a regular slot would need to be very long to have enough effect for the demo. So, an improved slot was used. This would not be needed for very high speed serial links.
+
+The geometry is shown below, along with the calculated eye diagram.
+
+![](sim/sim-single-slot-butterfly-model.png)
+
+![](sim/sim-single-slot-butterfly-eye.png)
+
+With a diffrential line, the effect on the eye diagram is spectacular: very clean.
+
+![](sim/sim-diff-pair-slot-butterfly-model.png)
+
+![](sim/sim-diff-pair-slot-butterfly-eye.png)
+
+The next step is to simulate the 2 slots:
+
+![](sim/sim-diff-pair-cross-butterfly-model.png)
+
+![](sim/sim-diff-pair-cross-butterfly-eye.png)
+
+A perfectly awful eye diagram.
+
+Simulation with only the vertical slot has a perfectly clean eye diagram, demonstrating the return current effect:
+
+![](sim/sim-diff-pair-slot-y-butterfly-model.png)
+
+![](sim/sim-diff-pair-slot-y-butterfly-eye.png)
+
+For the principle, a reference simulation without slots has also been performed. Eye diagram is also very clean, although not perfect due to the losses due to the length of lines:
+
+![](sim/sim-diff-pair-ref-butterfly-model.png)
+
+![](sim/sim-diff-pair-ref-butterfly-eye.png)
+
+![](sim/sim-diff-pair-ref-butterfly-S.png)
+
+These simulations confirm the underlying principle and provide guidelines for the test board.
