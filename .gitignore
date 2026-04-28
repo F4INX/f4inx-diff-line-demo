@@ -7,6 +7,10 @@ __pycache__/
 *pylines.txt
 *simdata.emerge
 
+# Kicad
+kicad/diff-line-demo/~diff-line-demo.kicad_pcb.lck
+kicad/diff-line-demo/diff-line-demo-backups/diff-line-demo-2026-*.zip
+
 # Other common ignore patterns
 *.log
 *.tmp
