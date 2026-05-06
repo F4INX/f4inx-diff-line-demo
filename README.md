@@ -158,3 +158,9 @@ For the principle, a reference simulation without slots has also been performed.
 ![](sim/sim-diff-pair-ref-butterfly-S.png)
 
 These simulations confirm the underlying principle and provide guidelines for the test board.
+
+## Board
+
+For now, only the slot shape was drawn on the PCB. Many thanks to Petr Dvořák for advice on the best way to draw this shape.
+
+![alt text](pictures/20260506_213500_slot.png)
