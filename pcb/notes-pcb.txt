@@ -22,3 +22,5 @@ https://jlcpcb.com/parts/2nd/Connectors/HDMI_Connectors_3260
 https://jlcpcb.com/partdetail/149706-HDMI_00119PCBTP/C138388
 
 After begin of layout, use https://jlcpcb.com/partdetail/AmphenolICC-10029449111RLF/C427307
+
+Some lines need tighter coupling: 0.36 mm almost ok with 0.5 mm gap.
