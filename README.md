@@ -161,6 +161,18 @@ These simulations confirm the underlying principle and provide guidelines for th
 
 ## Board
 
-For now, only the slot shape was drawn on the PCB. Many thanks to Petr Dvořák for advice on the best way to draw this shape.
+Many thanks to Petr Dvořák for advice on the best way to draw the slot on the PCB.
 
-![alt text](pictures/20260506_213500_slot.png)
+Currently, a first draft was routed, and a price for manufacturing through JLCPCB was obtained:
+
+![alt text](kicad/diff-line-demo/diff-line-demo.png)
+
+![alt text](kicad/diff-line-demo/jlcpcb/view-top.png)
+
+![alt text](kicad/diff-line-demo/jlcpcb/view-bottom.png)
+
+![alt text](kicad/diff-line-demo/jlcpcb/price-1.png)
+
+![alt text](kicad/diff-line-demo/jlcpcb/price-2.png)
+
+According to [https://www.reddit.com/r/JLCPCBLab/comments/1m047l9/what_is_the_reason_for_getting_charged_for_the/](https://www.reddit.com/r/JLCPCBLab/comments/1m047l9/what_is_the_reason_for_getting_charged_for_the/), this fee is charged when any dimension of the board is higher than 100 mm.

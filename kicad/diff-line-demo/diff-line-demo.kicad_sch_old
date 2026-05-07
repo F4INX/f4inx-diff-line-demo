@@ -1422,15 +1422,6 @@
 				)
 			)
 		)
-		(property "LCSC" "C138388"
-			(at 201.93 82.5499 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "11"
 			(uuid "c29f6870-5b28-4b52-9128-b0bdae674bef")
 		)
@@ -1721,15 +1712,6 @@
 				(font
 					(size 1.27 1.27)
 				)
-			)
-		)
-		(property "LCSC" "C138388"
-			(at 97.79 82.5499 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
 			)
 		)
 		(pin "11"
