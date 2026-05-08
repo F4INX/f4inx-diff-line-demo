@@ -176,3 +176,11 @@ Currently, a first draft was routed, and a price for manufacturing through JLCPC
 ![alt text](kicad/diff-line-demo/jlcpcb/price-2.png)
 
 According to [https://www.reddit.com/r/JLCPCBLab/comments/1m047l9/what_is_the_reason_for_getting_charged_for_the/](https://www.reddit.com/r/JLCPCBLab/comments/1m047l9/what_is_the_reason_for_getting_charged_for_the/), this fee is charged when any dimension of the board is higher than 100 mm.
+
+Ideally, several cases should be tested in a single board, at least the cross and the slot case. A pricing attempt was made to see if it would be feasible at a reasonable price. For this, the board was simply enlarged and sent to JLCPCB:
+
+![alt text](kicad/diff-line-demo/jlcpcb/price-larger-1.png)
+
+![alt text](kicad/diff-line-demo/jlcpcb/price-larger-2.png)
+
+The total price is rather high for this test. Other solutions should be found.
